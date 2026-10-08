@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasad Kulkarni | Portfolio</title>
+  
+  <!-- Pixel-art style Google Font & FontAwesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== VERTICAL NAVIGATION (Prompt 3) ==================== -->
+  <nav class="vertical-navbar" aria-label="Main Navigation">
+    <div class="nav-brand">
+      <span class="pixel-logo">&lt;PK /&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+      <li><a href="#about"><i class="fa-solid fa-user"></i> <span>About Me</span></a></li>
+      <li><a href="#skills"><i class="fa-solid fa-code"></i> <span>Skills</span></a></li>
+      <li><a href="#timeline"><i class="fa-solid fa-clock-rotate-left"></i> <span>Timeline</span></a></li>
+      <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> <span>Projects</span></a></li>
+      <li><a href="#testimonials"><i class="fa-solid fa-comments"></i> <span>Testimonials</span></a></li>
+      <li><a href="#chat"><i class="fa-solid fa-robot"></i> <span>Chat</span></a></li>
+      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a></li>
+    </ul>
+
+    <!-- Prompt 2: Night Mode Toggle Placeholder & Control -->
+    <div class="theme-toggle-wrapper">
+      <button id="theme-toggle" class="pixel-btn-icon" aria-label="Toggle Theme">
+        <i id="theme-icon" class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== MAIN CONTENT WRAPPER ==================== -->
+  <main class="content-container">
+
+    <!-- 1 & 2. HERO SECTION (Pixel Art Style & Tagline) -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-content">
+        <div class="hero-badge">PLAYER 1 READY</div>
+        <h1 class="pixel-title">PRASAD KULKARNI</h1>
+        <p class="tagline">Information Science Engineer &amp; Software Developer</p>
+        <div class="hero-cta">
+          <a href="#projects" class="pixel-btn primary-btn">VIEW QUESTS</a>
+          <a href="Resume.pdf" download="Prasad_Kulkarni_Resume.pdf" class="pixel-btn secondary-btn">
+            <i class="fa-solid fa-file-pdf"></i> DOWNLOAD RESUME
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ABOUT ME SECTION -->
+    <section id="about" class="section-card">
+      <h2 class="section-title"><i class="fa-solid fa-terminal"></i> About Me</h2>
+      <div class="about-grid">
+        <div class="profile-frame">
+          <img src="profile.jpeg" alt="Prasad Kulkarni Profile" class="profile-img" />
+          <div class="photo-overlay"></div>
+        </div>
+        <div class="about-text">
+          <p class="pixel-subheading">Level 1 Software Developer</p>
+          <p>
+            Hello! I am Prasad Kulkarni, an Information Science engineering student at
+            <strong>Adichunchanagiri Institute of Technology, Chikkamagaluru</strong>.
+            Passionate about crafting clean backend systems with Java and Python, building responsive web interfaces, and solving challenging problems through Data Structures and Algorithms.
+          </p>
+          <div class="stats-box">
+            <div class="stat-item"><span class="stat-num">7.3</span> CGPA</div>
+            <div class="stat-item"><span class="stat-num">2029</span> Expected Grad</div>
+            <div class="stat-item"><span class="stat-num">Java/Py</span> Core Stack</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SKILLS SECTION -->
+    <section id="skills" class="section-card">
+      <h2 class="section-title"><i class="fa-solid fa-microchip"></i> Skills &amp; Competencies</h2>
+      <div class="skills-grid">
+        <!-- Programming: Python -->
+        <div class="skill-card">
+          <div class="skill-info">
+            <span><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-level">80%</span>
+          </div>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 80%;"></div></div>
+        </div>
+
+        <!-- Backend: Java -->
+        <div class="skill-card">
+          <div class="skill-info">
+            <span><i class="fa-brands fa-java"></i> Java (Backend)</span>
+            <span class="skill-level">85%</span>
+          </div>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 85%;"></div></div>
+        </div>
+
+        <!-- Frontend: HTML/CSS -->
+        <div class="skill-card">
+          <div class="skill-info">
+            <span><i class="fa-brands fa-html5"></i> Frontend (HTML/CSS)</span>
+            <span class="skill-level">80%</span>
+          </div>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 80%;"></div></div>
+        </div>
+
+        <!-- Database: MySQL -->
+        <div class="skill-card">
+          <div class="skill-info">
+            <span><i class="fa-solid fa-database"></i> MySQL Database</span>
+            <span class="skill-level">75%</span>
+          </div>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 75%;"></div></div>
+        </div>
+
+        <!-- Core: DSA -->
+        <div class="skill-card">
+          <div class="skill-info">
+            <span><i class="fa-solid fa-diagram-project"></i> Core DSA</span>
+            <span class="skill-level">75%</span>
+          </div>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 75%;"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. INTERACTIVE TIMELINE SECTION -->
+    <section id="timeline" class="section-card">
+      <h2 class="section-title"><i class="fa-solid fa-hourglass-half"></i> Milestones Timeline</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 – 2029</span>
+            <h3>B.E. in Information Science</h3>
+            <p>Adichunchanagiri Institute of Technology, Chikkamagaluru, Karnataka. Maintaining an academic record of 7.3 CGPA.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Project Milestone</span>
+            <h3>Oil Extraction System</h3>
+            <p>Executed an intensive 3-week academic software project focused on extraction workflow and tracking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PROJECTS SECTION -->
+    <section id="projects" class="section-card">
+      <h2 class="section-title"><i class="fa-solid fa-gamepad"></i> Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1: Oil Extraction -->
+        <div class="project-card" data-project="Oil Extraction">
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-oil-well"></i>
+          </div>
+          <div class="project-body">
+            <h3>Oil Extraction</h3>
+            <p>Academic project focusing on process management and monitoring algorithms developed over a 3-week lifecycle.</p>
+            <div class="tags">
+              <span>Java</span><span>Python</span><span>Database</span>
+            </div>
+            <a href="https://github.com/prasadskulkarni07-cloud" target="_blank" class="pixel-link">
+              GitHub Repo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Cloud Portfolio -->
+        <div class="project-card" data-project="Portfolio Engine">
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="project-body">
+            <h3>Pixel Portfolio Website</h3>
+            <p>Retro-styled, responsive portfolio with dark/light themes, AI simulation interface, and milestone tracking.</p>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <a href="https://github.com/prasadskulkarni07-cloud" target="_blank" class="pixel-link">
+              View Source <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. EMBEDDED YOUTUBE VIDEO SECTION -->
+    <section id="video" class="section-card">
+      <h2 class="section-title"><i class="fa-brands fa-youtube"></i> Featured Video / Demo</h2>
+      <div class="video-container">
+        <!-- Replace video ID with your preferred introduction or project demo -->
+        <iframe 
+          src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+          title="Featured Showcase" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="video-caption"><i class="fa-solid fa-tag"></i> Showcase highlight reel and technical project walkthrough.</p>
+    </section>
+
+    <!-- 9. TESTIMONIALS SECTION -->
+    <section id="testimonials" class="section-card">
+      <h2 class="section-title"><i class="fa-solid fa-quote-left"></i> Testimonials &amp; Peer Reviews</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="quote">"Prasad demonstrates strong persistence in problem-solving and structured algorithmic thinking during development sprints."</p>
+          <div class="author-info">
+            <strong>- Project Collaborator</strong>
+            <span>Academic Peer</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="quote">"Consistent, detail-oriented work on backend database designs and system integration."</p>
+          <div class="author-info">
+            <strong>- Faculty Reviewer</strong>
+            <span>Dept. of Information Science</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. AI CHAT INTERFACE SECTION -->
+    <section id="chat" class="section-card">
+      <h2 class="section-title"><i class="fa-solid fa-robot"></i> Prasad.AI Chat Interface</h2>
+      <div class="chat-container">
+        <div class="chat-log" id="chat-log">
+          <div class="chat-message bot-message">
+            <strong>Prasad AI:</strong> Welcome! Ask me about Prasad's skills, university, or the Oil Extraction project.
+          </div>
+        </div>
+        <form id="chat-form" class="chat-input-row">
+          <input type="text" id="chat-input" placeholder="Type your query here..." required />
+          <button type="submit" class="pixel-btn primary-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 11. CONTACT FORM SECTION -->
+    <section id="contact" class="section-card">
+      <h2 class="section-title"><i class="fa-solid fa-headset"></i> Send a Transmission</h2>
+      <div class="contact-details" aria-label="Contact details">
+        <p><i class="fa-solid fa-user" aria-hidden="true"></i> <span>Prasad</span></p>
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:prasadskulkarni07@gmail.com">prasadskulkarni07@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+919535376801">9535376801</a></p>
+        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Chikkamagaluru, Karnataka</span></p>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="pixel-btn primary-btn" id="contact-submit">
+          <i class="fa-solid fa-paper-plane"></i> SUBMIT MESSAGE
+        </button>
+        <div id="contact-status" class="contact-status"></div>
+      </form>
+    </section>
+
+    <!-- 12. FOOTER SECTION -->
+    <footer class="footer-card">
+      <div class="social-links">
+        <a href="https://github.com/prasadskulkarni07-cloud" target="_blank" aria-label="GitHub Profile" class="social-icon">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/prasad-kulkarni-08a94539a" target="_blank" aria-label="LinkedIn Profile" class="social-icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:prasadskulkarni07@gmail.com" aria-label="Send Email" class="social-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="tel:+919535376801" aria-label="Phone Contact" class="social-icon">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+      <p class="copyright">&copy; 2026 Prasad Kulkarni. All rights reserved. Crafted with 8-bit aesthetic.</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
